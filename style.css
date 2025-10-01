@@ -217,8 +217,6 @@ main{
   background: rgba(255, 255, 255, 0.2);
   margin: 0 auto;
   height: calc(90vh - 80px); 
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   border-radius: 18px;
   width: 90%;
