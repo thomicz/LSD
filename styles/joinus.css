@@ -1,4 +1,4 @@
-@font-face {
+@font-face{
     font-family: 'mojangregular';
     src: url('/fonts/mojang-regular-webfont.woff') format('woff2'),
          url('/fonts/mojang-regular-webfont.woff2') format('woff');
@@ -38,7 +38,6 @@ nav ul {
     margin-right: 50px;
 }
 
-
 nav ul li{
    text-transform:lowercase;
    font-size: 22px
@@ -64,4 +63,40 @@ a:hover {
 #logo{
     height: 54px;
     margin-left: 40px;
+}
+
+
+.server-status {
+    display: flex;
+    gap: 40px; /* mezera mezi položkami */
+    background: rgba(255, 255, 255, 0.1); /* lehký průhledný podklad */
+    backdrop-filter: blur(6px); /* efekt rozmazání */
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.server-status span {
+    align-items:start;
+    gap: 8px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 120px);
+}
+
+.hero h1 {
+    font-size: 80px;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
+    margin: 0px;
 }

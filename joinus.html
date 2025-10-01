@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IP adresa</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/joinus.css">
     <link rel="icon" type="image/png" href="logos/fav.png">
 </head>
 <body>
@@ -20,32 +20,36 @@
         </ul>
     </nav>
 
-    <!-- <main class="hero">
-        <h1>🌍 Připoj se k našemu serveru!</h1>
-        <p>IP adresa: <span style="color:#1db954; font-weight:bold; text-shadow:0 0 10px #1db954;">play.naseserver.cz</span></p>
+    <main class="hero">
+        <h1>Jak se joinout?</h1>
 
         <div class="server-status">
-            <span>Stav: <span id="status">Online</span></span>
-            <span>Hráči: <span id="players">12/100</span></span>
+            <div id="text">
+                    <ol>
+                        <li>Zapni Minecraft (verze 1.20+).</li>
+                        <li>V menu klikni na <b>Multiplayer</b>.</li>
+                        <li>Vyber <b>Direct Connection</b>.</li>
+                        <li>Do pole <b>Server Address</b> zadej: <span style="color:#1db954;">play.naseserver.cz</span></li>
+                        <li>Klikni na <b>Join Server</b>.</li>
+                    </ol>
+                </div>
         </div>
 
         <div id="box-news">
             <div id="news">
-                <h1>Jak se připojit?</h1>
                 <div id="text">
-                    <ol>
-                        <li>Otevři Minecraft (verze 1.20+).</li>
+                    <!-- <ol>
+                        <li>Zapni Minecraft (verze 1.20+).</li>
                         <li>V menu klikni na <b>Multiplayer</b>.</li>
                         <li>Vyber <b>Přidat server</b>.</li>
-                        <li>Zadej název serveru (např. <i>Náš server</i>).</li>
                         <li>Do pole <b>Adresa serveru</b> vlož: <span style="color:#1db954;">play.naseserver.cz</span></li>
                         <li>Ulož a klikni na <b>Připojit</b>.</li>
-                    </ol>
+                    </ol> -->
                 </div>
                 <button class="btn" onclick="copyIP()">📋 Zkopírovat IP</button>
             </div>
         </div>
-    </main> -->
+    </main>
 
     <script>
         function copyIP() {
