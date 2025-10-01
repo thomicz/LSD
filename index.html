@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvod</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logos/fav.png">
+</head>
+<body>
+      <nav>
+              <img id="logo" src="logos/LSD_logo.png" alt="logo">
+
+        <ul>
+            <li id="selected"><a href="index.html">Úvod</a></li>
+            <li><a href="joinus.html">IP adresa</a></li>
+            <li><a href="news.html">Novinky</a></li>
+            <li><a href="rules.html">Pravidla</a></li>
+            <li><a href="dynmap.html">Dyn mapa</a></li>
+        </ul>
+    </nav>
+    
+    <main class="hero">
+        <h1>Luke Survival Darkrise</h1>
+        <p id="hero-text">Minecraft server od roku 2020</p>
+            <div class="server-status">
+                <span>Status: <span id="status">Načítám...</span></span>
+                <span>Online players: <span id="players">0</span></span>
+            </div>
+
+<script>
+
+const serverIP = 'mc.hypixel.net'; //IP adresa serveru
+
+fetch(`https://api.mcsrvstat.us/2/${serverIP}`)
+  .then(response => response.json())
+  .then(data => {
+    const statusEl = document.getElementById('status');
+    const playersEl = document.getElementById('players');
+
+    if (data.online) {
+      statusEl.textContent = 'Online';
+      statusEl.style.color = '#1db954'; // zelená
+      playersEl.textContent = data.players.online || 0;
+    } else {
+      statusEl.textContent = 'Offline';
+      statusEl.style.color = '#e74c3c'; // červená
+      playersEl.textContent = 0;
+    }
+  })
+  .catch(err => {
+    console.error('Chyba při získávání dat:', err);
+    document.getElementById('status').textContent = 'Chyba';
+    document.getElementById('players').textContent = '-';
+  });
+
+    </script>
+    </main>
+    </body>
+</html>

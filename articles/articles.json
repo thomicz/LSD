@@ -1,0 +1,43 @@
+{
+  "articles": [
+    {
+      "id": "article1",
+      "title": "Nadpis 1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.",
+      "img": "images/background_1.png",
+      "date": "1. 1. 2025"
+    },
+    {
+      "id": "article2",
+      "title": "Nadpis 2",
+      "text": "Druhý článek s nějakým textem. Může být dlouhý, obsahovat HTML značky nebo odstavce.",
+      "img": "images/background_2.png",
+      "date": "1. 1. 2025"
+
+    },
+    {
+      "id": "article3",
+      "title": "Nadpis 3",
+      "text": "Třetí článek s dalším textem. Lorem ipsum pokračuje...",
+      "img": "images/background_4.png",
+      "date": "1. 1. 2025"
+
+    },
+    {
+      "id": "article4",
+      "title": "Nadpis 4",
+      "text": "Čtvrtý článek, text může být libovolně dlouhý.",
+      "img": "images/background_3.png",
+      "date": "1. 1. 2025"
+
+    },
+    {
+      "id": "article5",
+      "title": "Nadpis 5",
+      "text": "Pátý článek s nějakým zajímavým obsahem.",
+      "img": "images/background_2.png",
+      "date": "1. 1. 2025"
+
+    }
+  ]
+}

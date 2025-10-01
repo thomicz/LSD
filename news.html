@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novinky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logos/fav.png">
+    <script src="script.js"></script>
+</head>
+<body>
+     <nav>
+        <img id="logo" src="logos/LSD_logo.png" alt="logo">
+
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="joinus.html">IP adresa</a></li>
+            <li id="selected"><a href="news.html">Novinky</a></li>
+            <li><a href="rules.html">Pravidla</a></li>
+            <li><a href="dynmap.html">Dyn mapa</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="box-news">
+            <div id="news">
+                <img src="images/background_1.png" alt="">
+                <h1>Nadpis</h1>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.</p>
+                <button class="btn" onclick="openModal('article1')">Číst více</button>
+            </div>
+
+             <div id="news">
+                <img src="images/background_2.png" alt="">
+                <h1>Nadpis</h1>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.</p>
+                <button class="btn" onclick="openModal('article2')">Číst více</button>
+            </div>
+
+             <div id="news">
+                <img src="images/background_4.png" alt="">
+                <h1>Nadpis</h1>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.</p>
+                <button class="btn" onclick="openModal('article3')">Číst více</button>
+            </div>
+
+            <div id="news">
+                <img src="images/background_3.png" alt="">
+                <h1>Nadpis</h1>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.</p>
+                <button class="btn" onclick="openModal('article4')">Číst více</button>
+            </div>
+
+             <div id="news">
+                <img src="images/background_2.png" alt="">
+                <h1>Nadpis</h1>
+                <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit sollicitudin ante eget ultricies. Maecenas eget urna eu arcu tempor elementum. Phasellus pretium, neque id aliquet sagittis, dui lectus fringilla lectus, a porttitor diam nunc lobortis tellus. Aenean sit amet ligula pulvinar, gravida odio in, mattis quam.</p>
+                <button class="btn" onclick="openModal('article5')">Číst více</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal (na konci body) -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+</body>
+</html>
