@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'mojangregular';
+    src: url('/fonts/mojang-regular-webfont.woff') format('woff2'),
+         url('/fonts/mojang-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url(/images/background_3.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "mojangregular";
+    color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.15);
+  z-index: -1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start; 
+    gap: 60px;
+    margin-right: 50px;
+}
+
+
+nav ul li{
+   text-transform:lowercase;
+   font-size: 22px
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-5px); 
+    color: #2ecc71;
+}
+
+#selected a {
+    color: #1db954;
+    text-shadow: 0 0 16px #1db954;
+}
+
+#logo{
+    height: 54px;
+    margin-left: 40px;
+}
+
+body iframe{
+    width: 90%;
+    height: calc(90vh - 80px); 
+    display: block;
+    border: none;
+    border-radius: 18px;
+    margin: 0 auto;
+}
