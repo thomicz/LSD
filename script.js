@@ -26,3 +26,6 @@ window.onclick = function(e) {
     closeModal();
   }
 }
+
+
+
