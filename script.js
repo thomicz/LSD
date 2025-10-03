@@ -11,7 +11,9 @@ function openModal(articleId) {
   if (!article) return;
 
   document.getElementById("modal-title").innerText = article.title;
+  document.getElementById("modal-date").innerText = article.date;
   document.getElementById("modal-text").innerText = article.text;
+
 
   document.getElementById("modal").style.display = "block";
 }

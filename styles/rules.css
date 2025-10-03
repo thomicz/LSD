@@ -66,6 +66,39 @@ a:hover {
     margin-left: 40px;
 }
 
+  h1{
+        font-size: 70px;
+        text-align: center;
+        margin: 60px;
+    }
+
+ol{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* mezera mezi položkami */
+    background: rgba(255, 255, 255, 0.1); /* lehký průhledný podklad */
+    backdrop-filter: blur(6px); /* efekt rozmazání */
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 120px);
+}
+
 @media (max-width: 768px) {
 
     nav {
@@ -90,6 +123,8 @@ a:hover {
         margin: 0 0 15px 0;
         height: 80px;
     }
+
+   
    
 }
 
