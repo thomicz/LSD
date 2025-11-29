@@ -78,6 +78,7 @@ a:hover {
 }
 
 .modal-content{
+    
   box-shadow: 0 8px 30px rgba(0,0,0,0.5);
   overflow-y: auto;
   animation: zoomIn 0.3s ease;
@@ -90,6 +91,7 @@ a:hover {
   width: 90%;
   border: none;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  
 }
 
 @keyframes zoomIn {
@@ -115,6 +117,7 @@ a:hover {
 }
 
 .btn{
+    
     display: block;       
     margin: 0 auto;   
     background: #1db954;
@@ -143,7 +146,7 @@ a:hover {
     backdrop-filter: blur(8px);
     background: rgba(255, 255, 255, 0.2);
     border-radius: 18px;
-    width: calc(33.33% - 2%); 
+    width: calc(33.33% - 1%); 
     min-width: 400px;
     word-wrap: break-word; 
     overflow-wrap: break-word;
